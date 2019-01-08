@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.example.administrator.dimine_sis"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库（不需要的删除即可）。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "f6594e76ff6aa64a493668d0", //JPush上注册的包名对应的appkey（*换成你的*）
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('D:/project/jks/DimineSes.jks')
+            storePassword "123123"
+            keyAlias "DimineSes"
+            keyPassword "123123"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/AMap_Location_V3.3.0_20170118.jar')
+    compile files('libs/AMap_Search_V4.0.0_20170111.jar')
+    compile files('libs/Android_Map3D_SDK_V4.1.3_20161208.jar')
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okio:okio:1.7.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.6@aar'
+    compile 'cn.bingoogolapple:bga-banner:2.0.9@aar'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.0@aar'
+    compile 'cn.bingoogolapple:bga-swipeitemlayout:1.0.4@aar'
+    compile 'cn.bingoogolapple:bga-indicator:1.0.1@aar'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.youth.banner:banner:1.4.4'
+    //    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.1'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.foamtrace:photopicker:1.0'
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    compile 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.5'
+    compile 'com.github.frank-zhu:pullzoomview:1.0.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+    compile 'com.github.chrisbanes.photoview:library:1.2.3'
+    compile 'cn.bingoogolapple:bga-badgeview:1.1.3@aar'
+    compile 'com.yanzhenjie:permission:1.0.1'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'cn.jiguang.sdk:jpush:3.0.7'
+    compile 'cn.jiguang.sdk:jcore:1.1.5'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/commons-lang-2.5.jar')
+}

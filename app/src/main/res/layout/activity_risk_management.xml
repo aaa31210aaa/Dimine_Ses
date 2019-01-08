@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home_content.RiskManagement">
+
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="隐患管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title2" />
+
+        <include
+            android:id="@+id/risk_management_back"
+            layout="@layout/back_base"></include>
+
+    </RelativeLayout>
+
+    <include layout="@layout/title_img"></include>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/risk_management_rl1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_marginLeft="50px"-->
+    <!--android:layout_marginRight="50px"-->
+    <!--android:layout_marginTop="20px"-->
+    <!--android:background="@drawable/editext_yb">-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/risk_management_img1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/x30"-->
+    <!--android:background="@drawable/risk_check" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="50px"-->
+    <!--android:layout_toRightOf="@id/risk_management_img1"-->
+    <!--android:text="危险源点检" />-->
+
+    <!--<include layout="@layout/right_arrow"></include>-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/risk_management_rl2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_marginLeft="50px"-->
+    <!--android:layout_marginRight="50px"-->
+    <!--android:layout_marginTop="50px"-->
+    <!--android:background="@drawable/editext_yb">-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/risk_management_img2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/x30"-->
+    <!--android:background="@drawable/risk_keymis" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="50px"-->
+    <!--android:layout_toRightOf="@id/risk_management_img2"-->
+    <!--android:text="@string/safety_check_list" />-->
+
+    <!--<include layout="@layout/right_arrow"></include>-->
+
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/risk_management_rl3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/editext_yb">
+
+
+            <ImageView
+                android:id="@+id/risk_management_img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="20px"
+                android:background="@drawable/risk_check" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@id/risk_management_img3"
+                android:text="@string/risk_management_rl3_text" />
+
+            <include layout="@layout/right_arrow"></include>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/risk_management_rl4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/editext_yb">
+
+
+            <ImageView
+                android:id="@+id/risk_management_img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="20px"
+                android:background="@drawable/risk_keymis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@id/risk_management_img4"
+                android:text="@string/risk_management_rl4_text" />
+
+            <include layout="@layout/right_arrow"></include>
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/risk_management_rl5"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginBottom="20px"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_marginLeft="50px"-->
+        <!--android:layout_marginRight="50px"-->
+        <!--android:layout_marginTop="50px"-->
+        <!--android:background="@drawable/editext_yb">-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/risk_management_img5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/x30"-->
+        <!--android:background="@drawable/risk_check" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="50px"-->
+        <!--android:layout_toRightOf="@id/risk_management_img5"-->
+        <!--android:text="@string/risk_management_rl5_text" />-->
+
+        <!--<include layout="@layout/right_arrow"></include>-->
+
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/risk_management_rl6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/editext_yb">
+
+
+            <ImageView
+                android:id="@+id/risk_management_img6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="20px"
+                android:background="@drawable/risk_check" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@id/risk_management_img6"
+                android:text="@string/risk_management_rl6_text" />
+
+            <include layout="@layout/right_arrow"></include>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/risk_management_rl7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/editext_yb">
+
+
+            <ImageView
+                android:id="@+id/risk_management_img7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="20px"
+                android:background="@drawable/risk_keymis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@id/risk_management_img7"
+                android:text="@string/risk_management_rl7_text" />
+
+            <include layout="@layout/right_arrow"></include>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20px"
+           ></RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

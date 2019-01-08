@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home_content.AqJyPxDetail">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="安全教育培训详情" />
+
+        <include
+            android:id="@+id/aqjypx_detail_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000px">
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/SgxqTitle"
+                    android:text="培训名称" />
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_trainingname"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="培训时间" />
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_trainingdate"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="培训地点" />
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_trainingadd"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="培训内容" />
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_trainingcontent"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="培训方式" />
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_trainingtype"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="培训授课人" />
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_trainingman"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="授课人介绍" />
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_trainingintro"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="组织单位" />
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_trainingunit"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="完成情况" />
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_completion"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="培训效果" />
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_effect"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="企业名称" />
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_qyname"
+                    style="@style/SgxqContent"
+                    android:text=""
+                    android:textColor="@color/blue_deep" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+            <!--<TextView-->
+            <!--style="@style/SgxqTitle"-->
+            <!--android:text="附件名称" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/aqjypx_detail_filename"-->
+            <!--style="@style/SgxqContent"-->
+            <!--android:text="" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="备注：" />
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    android:id="@+id/aqjypx_detail_memo"
+                    style="@style/SgxqContent"
+                    android:gravity="top"
+                    android:minHeight="200px"
+                    android:paddingLeft="20px"
+                    android:text="" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/aqjypx_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50px"
+        android:background="@color/white"></ListView>
+</LinearLayout>

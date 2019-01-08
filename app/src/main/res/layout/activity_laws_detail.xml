@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ql"
+    android:fitsSystemWindows="true"
+    tools:context="wfp_query.LawsDetail">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="法律法规详情" />
+        <include
+            android:id="@+id/laws_detail_item_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/SgxqLL">
+
+            <TextView
+                style="@style/SgxqTitle"
+                android:text="法律法规名称" />
+
+            <TextView
+                android:id="@+id/laws_detail_item_lrtitle"
+                style="@style/SgxqContent"
+                android:text="" />
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/SgxqLL">
+
+            <TextView
+                style="@style/SgxqTitle"
+                android:text="所属行业" />
+
+            <TextView
+                android:id="@+id/laws_detail_item_industryname"
+                style="@style/SgxqContent" />
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/SgxqLL">
+
+            <TextView
+                style="@style/SgxqTitle"
+                android:text="所属类别" />
+
+            <TextView
+                android:id="@+id/laws_detail_item_lrtypename"
+                style="@style/SgxqContent" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/SgxqLL">
+
+            <TextView
+                style="@style/SgxqTitle"
+                android:text="文号" />
+
+            <TextView
+                android:id="@+id/laws_detail_item_docnumber"
+                style="@style/SgxqContent" />
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/SgxqLL">
+
+            <TextView
+                style="@style/SgxqTitle"
+                android:text="颁布时间" />
+
+            <TextView
+                android:id="@+id/laws_detail_item_bbdate"
+                style="@style/SgxqContent" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout style="@style/SgxqLL">
+
+            <TextView
+                style="@style/SgxqTitle"
+                android:text="生效时间" />
+
+            <TextView
+                android:id="@+id/laws_detail_item_effdate"
+                style="@style/SgxqContent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:text="法律法规信息" />
+
+        <TextView
+            android:id="@+id/laws_detail_item_lrdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200px"
+            android:layout_margin="20px"
+            android:background="@drawable/editext_yb"
+            android:padding="5px"
+            android:text="" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

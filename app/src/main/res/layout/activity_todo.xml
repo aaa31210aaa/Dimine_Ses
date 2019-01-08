@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.dimine_sis.Todo">
+
+
+        <RelativeLayout style="@style/TitleHeight">
+
+            <ImageView
+                android:id="@+id/todo_back"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/todo_title_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Title2" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350px"
+            android:background="@drawable/spanner2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:text="@string/todo_check"
+            android:textColor="@color/blue_deep"
+            android:textSize="@dimen/Title3" />
+
+        <ListView
+            android:id="@+id/todo_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>

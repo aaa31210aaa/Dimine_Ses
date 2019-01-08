@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="data_report.DataReport">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="@string/DataReportTitle" />
+
+        <TextView
+            android:id="@+id/data_report_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:text="切换图形"
+            android:textColor="@color/white" />
+        <include
+            android:id="@+id/data_report_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="600px">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/data_report_barchart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:visibility="gone">
+
+                </com.github.mikephil.charting.charts.BarChart>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/data_report_linechart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.github.mikephil.charting.charts.LineChart>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/DataReportZd"
+                android:text="@string/ReportLittleTitle1" />
+
+            <include layout="@layout/gray_line"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/ReportLL"
+                    >
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:text="@string/ReportZd1" />
+
+                    <TextView
+                        android:id="@+id/report_comusertotal"
+                        style="@style/DataReportsj"
+                        android:text=""
+                        android:textColor="@color/green"/>
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwjia" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:text="@string/ReportZd2" />
+
+                    <TextView
+                        android:id="@+id/report_toauditusertotal"
+                        style="@style/DataReportsj"
+                        android:text=""
+                        android:textColor="@color/orange"/>
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwjia" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:text="@string/ReportTjRq" />
+
+                    <TextView
+                        android:id="@+id/report_tjdate"
+                        style="@style/DataReportsj"
+                        android:text=""
+                        android:textColor="@color/green"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/DataReportZd"
+                    android:text="@string/ReportLittleTitle2" />
+
+                <include layout="@layout/gray_line"></include>
+
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/jg" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZd33" />
+
+                    <TextView
+                        android:id="@+id/report_bysbybdangertotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/jg" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZd4" />
+
+                    <TextView
+                        android:id="@+id/report_dqdangertotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/jg" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZd44" />
+
+                    <TextView
+                        android:id="@+id/report_bywwcybdangertotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/jg" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZd3" />
+
+                    <TextView
+                        android:id="@+id/report_bysbzddangertotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/tx" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZddsh" />
+
+                    <TextView
+                        android:id="@+id/report_toauditdangertotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/jg" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZdwzg" />
+
+                    <TextView
+                        android:id="@+id/report_bywwczddangertotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+                <!--<LinearLayout style="@style/ReportLL">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="50px"-->
+                <!--android:layout_height="50px"-->
+                <!--android:background="@drawable/jg" />-->
+
+                <!--<TextView-->
+                <!--style="@style/WrapWrapBlack"-->
+                <!--android:paddingLeft="50px"-->
+                <!--android:text="@string/ReportZd5" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/report_data5"-->
+                <!--style="@style/DataReportsj"-->
+                <!--android:text="186" />-->
+
+                <!--<TextView-->
+                <!--style="@style/WrapWrapDw"-->
+                <!--android:text="@string/Dwtiao" />-->
+                <!--</LinearLayout>-->
+
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/tx" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZd6" />
+
+                    <TextView
+                        android:id="@+id/report_wsbcomtotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwjia" />
+                </LinearLayout>
+
+
+                <!--<LinearLayout style="@style/ReportLL">-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="50px"-->
+                <!--android:layout_height="50px"-->
+                <!--android:background="@drawable/tx" />-->
+
+                <!--<TextView-->
+                <!--style="@style/WrapWrapBlack"-->
+                <!--android:paddingLeft="50px"-->
+                <!--android:text="@string/ReportZd7" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/report_data7"-->
+                <!--style="@style/DataReportsj"-->
+                <!--android:text="186" />-->
+
+                <!--<TextView-->
+                <!--style="@style/WrapWrapDw"-->
+                <!--android:text="@string/Dwtiao" />-->
+                <!--</LinearLayout>-->
+
+                <TextView
+                    style="@style/DataReportZd"
+                    android:text="@string/ReportLittleTitle3" />
+
+                <include layout="@layout/gray_line"></include>
+
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/wc" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZdPcYbyh" />
+
+                    <TextView
+                        android:id="@+id/report_yearybdangertotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/wc" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZdYzgYbyh" />
+
+                    <TextView
+                        android:id="@+id/report_havechangedybtotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/jg" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZdWzgYbyh" />
+
+                    <TextView
+                        android:id="@+id/report_nochangeybtotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/wc" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZdPcZdyh" />
+
+                    <TextView
+                        android:id="@+id/report_yearzddangertotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/wc" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZdYzgZdyh" />
+
+                    <TextView
+                        android:id="@+id/report_havechangedzdtotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/jg" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZdWzgZdyh" />
+
+                    <TextView
+                        android:id="@+id/report_nochangezdtotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/wc" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZd8" />
+
+                    <TextView
+                        android:id="@+id/report_dangertotal"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="@string/Dwtiao" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ReportLL">
+
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:background="@drawable/wc" />
+
+                    <TextView
+                        style="@style/WrapWrapBlack"
+                        android:paddingLeft="50px"
+                        android:text="@string/ReportZd12" />
+
+                    <TextView
+                        android:id="@+id/report_zgl"
+                        style="@style/DataReportsj"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/WrapWrapDw"
+                        android:text="%" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20px">
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

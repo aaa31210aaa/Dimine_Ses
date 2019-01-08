@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="WrapMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="TitleHeight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">150px</item>
+        <item name="android:background">@color/blue_deep</item>
+    </style>
+
+    <style name="XlTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10px</item>
+        <item name="android:padding">10px</item>
+        <item name="android:drawableRight">@drawable/xxjt</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/Title4</item>
+        <item name="android:background">@drawable/editext_yb</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="MmTitleTextSize">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/Title2</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TitleTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/Title2</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerInParent">true</item>
+
+    </style>
+
+    <style name="WhiteBackGroud">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <!--去掉actionbar和title-->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        //退出时使用
+        <item name="android:windowExitTransition">@transition/slide</item>
+        //进入时使用
+        <item name="android:windowEnterAnimation">@transition/fade</item>
+        //再次进入使用
+        <item name="android:windowReenterTransition">@transition/slide</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorPrimary</item> <!--状态栏-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item> <!--toolbar-->
+        <item name="colorAccent">@color/orange</item> <!--重点-->
+    </style>
+
+    <style name="MyAppTheme" parent="BaseAppTheme">
+
+    </style>
+
+    <!--数据统计标题样式-->
+    <style name="DataReportZd">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/Title3</item>
+        <item name="android:textColor">@color/blue_deep</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">20px</item>
+    </style>
+
+    <!--数据统计数据样式-->
+    <style name="DataReportsj">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50px</item>
+    </style>
+
+    <style name="WrapWrapBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="WrapWrapDw">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50px</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ReportLL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">20px</item>
+        <item name="android:background">@color/gray_qian</item>
+        <item name="android:paddingLeft">50px</item>
+        <item name="android:padding">20px</item>
+    </style>
+
+    <style name="QyXxTv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">10px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/editext_yb</item>
+        <item name="android:layout_margin">5px</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="QyXxLj">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/modify_password_btn</item>
+        <item name="android:padding">10px</item>
+        <item name="android:layout_margin">10px</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Kong">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">10px</item>
+        <item name="android:layout_margin">10px</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="SgxqLL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10px</item>
+        <item name="android:paddingTop">10px</item>
+    </style>
+
+    <style name="SgxqTitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10px</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:background">@drawable/editext_yb</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">10px</item>
+        <item name="android:paddingTop">10px</item>
+    </style>
+
+    <style name="SgxqContent">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10px</item>
+        <item name="android:layout_weight">7</item>
+        <item name="android:background">@drawable/editext_yb</item>
+        <item name="android:paddingLeft">10px</item>
+        <item name="android:paddingBottom">10px</item>
+        <item name="android:paddingTop">10px</item>
+    </style>
+
+    <style name="QyListItemTitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">60px</item>
+        <item name="android:paddingBottom">60px</item>
+        <item name="android:paddingLeft">10px</item>
+        <item name="android:paddingRight">10px</item>
+        <item name="android:textSize">@dimen/Title3</item>
+    </style>
+
+    <style name="QyListItemContentLL">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">20px</item>
+        <item name="android:layout_weight">0.6</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="QyListItemContentItemLL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">20px</item>
+        <item name="android:paddingBottom">20px</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:padding">15px</item>
+    </style>
+
+
+</resources>

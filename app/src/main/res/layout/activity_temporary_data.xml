@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="risk_management.TemporaryData">
+
+    <RelativeLayout
+        android:id="@+id/enterprise_information_title_rl"
+        style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="临时数据" />
+
+        <include
+            android:id="@+id/temporary_data_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:id="@+id/temporary_data_batchdeletecancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:text="批量删除"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <ListView
+            android:id="@+id/temporary_data_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
+        <include layout="@layout/nodata_layout"></include>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/temporary_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/temporary_data_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue_deep"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="5px"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/temporary_data_allcheck"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue_deep"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

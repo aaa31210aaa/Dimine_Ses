@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="risk_management.HiddenDangerReview">
+
+    <LinearLayout style="@style/WhiteBackGroud">
+
+        <RelativeLayout
+            style="@style/TitleHeight"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <include
+                android:id="@+id/hidden_danger_review_back"
+                layout="@layout/back_base"></include>
+
+            <TextView
+                style="@style/MmTitleTextSize"
+                android:text="@string/risk_management_rl5_text" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:background="@color/orange"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/danger_review_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:background="@drawable/searchview_yb"
+                android:completionThreshold="2"
+                android:drawableLeft="@drawable/msearch"
+                android:hint="请输入关键字"
+                android:paddingLeft="20px"
+                android:paddingRight="100px"
+                android:singleLine="true"
+                android:textColorHint="@color/gray_deep" />
+
+            <ImageView
+                android:id="@+id/danger_review_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/clear"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/hidden_danger_review_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/hidden_danger_review_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

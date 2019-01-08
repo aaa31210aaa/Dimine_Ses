@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="employee_participation.HiddenReport">
+
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <include
+            android:id="@+id/hidden_report_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="隐患举报"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title2" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_centerVertical="true"
+            android:background="@color/gray_deep" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:background="@color/orange"
+            android:text="@string/hidden_rectification_mtitle1"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="50px">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="隐患" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="不符合项" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="其他" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_centerVertical="true"
+            android:background="@color/gray_deep" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:background="@color/text_select_color"
+            android:text="隐患描述"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="隐患来源" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="0.7"
+                android:background="@drawable/input_class"
+                android:hint="请输入隐患地点"
+                android:paddingLeft="10px"
+                android:textColorHint="@color/gray_deep" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="隐患来源" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="0.7"
+                android:background="@drawable/editext_yb"
+                android:hint="请输入隐患的相关描述"
+                android:paddingLeft="10px"
+                android:textColorHint="@color/gray_deep" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="隐患来源" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="0.7"
+                android:background="@drawable/input_class"
+                android:hint="请选择相关单位"
+                android:paddingLeft="10px"
+                android:textColorHint="@color/gray_deep" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_marginLeft="50px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍   照" />
+
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/icon_addpic_unfocused" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50px"
+                android:background="@drawable/editext_yb"
+                android:text="本地选择" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_yb"
+                android:text="拍照" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="400px"
+        android:layout_height="100px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50px"
+        android:background="@drawable/modify_password_btn"
+        android:text="提   交"
+        android:textColor="@color/white" />
+</LinearLayout>
+

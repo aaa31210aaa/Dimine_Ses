@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="supervision.SupervisionManagement">
+
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <include
+            android:id="@+id/supervision_management_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="监管执法管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title2" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/title_img"></include>
+
+    <RelativeLayout
+        android:id="@+id/supervision_management_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/editext_yb">
+
+
+        <ImageView
+            android:id="@+id/supervision_management_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/sfcheck_check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:layout_toRightOf="@id/supervision_management_img1"
+            android:text="执法登记" />
+
+        <include layout="@layout/right_arrow"></include>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/supervision_management_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/editext_yb">
+
+
+        <ImageView
+            android:id="@+id/supervision_management_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/sfcheck_dangrec" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:layout_toRightOf="@id/supervision_management_img2"
+            android:text="执法处置" />
+
+        <include layout="@layout/right_arrow"></include>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/supervision_management_rl3"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/editext_yb">
+
+
+        <ImageView
+            android:id="@+id/supervision_management_img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/sfcheck_reform" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:layout_toRightOf="@id/supervision_management_img3"
+            android:text="复查" />
+
+        <include layout="@layout/right_arrow"></include>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

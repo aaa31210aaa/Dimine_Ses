@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+
+        <TextView
+            android:id="@+id/todo_listview_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:gravity="center"
+            android:text="6666" />
+
+        <TextView
+            android:id="@+id/todo_listview_item_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50px"
+            android:gravity="right|center_vertical"
+            android:text="待处理" />
+    </LinearLayout>
+</LinearLayout>

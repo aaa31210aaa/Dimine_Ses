@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="enterprise_information.QyYhInfomationDetail">
+
+    <RelativeLayout style="@style/TitleHeight">
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="企业隐患信息详情" />
+
+        <include
+            android:id="@+id/qy_yh_information_detail_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="隐患名称" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_crname"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="隐患类别" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_crtypename"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="隐患编号" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_crcode"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="类型分类" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_crlxflname"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="排查日期" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_pcdate"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="整改类型" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_zgtypename"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="隐患地点" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_craddr"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="隐患描述" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_crdesc"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="报告摘要" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_crbgzy"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="隐患状态" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_crstatename"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="治理方案" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_zyzlfa"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="隐患来源" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_source"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="整改责任人" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_zgman"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="治理截止日" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_zljzdate"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="企业名称" />
+
+                <TextView
+                    android:id="@+id/qy_yh_information_detail_deptname"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+                <!--<TextView-->
+                    <!--style="@style/SgxqTitle"-->
+                    <!--android:text="附件名称" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/qy_yh_information_detail_filename"-->
+                    <!--style="@style/SgxqContent" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/qy_yh_information_detail_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="20px">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

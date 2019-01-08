@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_qian"
+    android:orientation="vertical"
+    tools:context="tab.MineFragment">
+
+
+    <com.ecloud.pulltozoomview.PullToZoomScrollViewEx
+        android:id="@+id/mine_scrollview"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mine_title"
+        android:layout_height="match_parent">
+
+    </com.ecloud.pulltozoomview.PullToZoomScrollViewEx>
+
+    <LinearLayout style="@style/TitleHeight"
+        android:id="@+id/mine_title">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="我的" />
+
+    </LinearLayout>
+
+</RelativeLayout>

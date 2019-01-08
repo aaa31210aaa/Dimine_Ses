@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="security_check.HiddenRectification">
+
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <include
+            android:id="@+id/hidden_rectification_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="待整改记录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title2" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

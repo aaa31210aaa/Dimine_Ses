@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F3F3"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/gray_line"></include>
+
+
+        <RelativeLayout
+            android:id="@+id/mine_version_information_rl"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginTop="50px"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/mine_version_information_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/wb_chk" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@id/mine_version_information_img"
+                android:text="当前版本" />
+
+            <TextView
+                android:id="@+id/mine_dqbb_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mine_version_information_img"
+                android:layout_toLeftOf="@+id/mine_dqbb"
+                android:text="当前版本：" />
+
+            <TextView
+                android:id="@+id/mine_dqbb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/mine_dqbb_tv"
+                android:layout_marginRight="40px"
+                android:text="" />
+
+        </RelativeLayout>
+
+        <!--<include layout="@layout/gray_line"></include>-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/mine_modify_password_rl"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x100"-->
+        <!--android:background="@color/white">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/mine_modify_password_img"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/x20"-->
+        <!--android:background="@drawable/wb_danger" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/x50"-->
+        <!--android:layout_toRightOf="@id/mine_modify_password_img"-->
+        <!--android:text="修改密码" />-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="@dimen/x50"-->
+        <!--android:layout_height="@dimen/x50"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="@dimen/x20"-->
+        <!--android:background="@drawable/right" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<include layout="@layout/gray_line"></include>-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/mine_custom_camera"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x100"-->
+        <!--android:background="@color/white">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/mine_custom_camera_img"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/x20"-->
+        <!--android:background="@drawable/wb_danger" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/x50"-->
+        <!--android:layout_toRightOf="@id/mine_custom_camera_img"-->
+        <!--android:text="自定义相机" />-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="@dimen/x50"-->
+        <!--android:layout_height="@dimen/x50"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="@dimen/x20"-->
+        <!--android:background="@drawable/right" />-->
+        <!--</RelativeLayout>-->
+
+        <include layout="@layout/gray_line"></include>
+
+        <RelativeLayout
+            android:id="@+id/mine_cancellation_rl"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginTop="50px"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/mine_cancellation_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/wb_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@id/mine_cancellation_img"
+                android:text="注销" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:background="@drawable/right" />
+        </RelativeLayout>
+
+        <include layout="@layout/gray_line"></include>
+
+    </LinearLayout>
+</LinearLayout>

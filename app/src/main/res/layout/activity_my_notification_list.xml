@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="mynotification_detail.MyNotificationList">
+
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <include
+            android:id="@+id/mynotificationlist_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="通知公告"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title2" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/title_img"></include>
+
+    <RelativeLayout
+        android:id="@+id/mynotificationlist_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/editext_yb">
+
+
+        <ImageView
+            android:id="@+id/mynotificationlist_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/sfcheck_check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:layout_toRightOf="@id/mynotificationlist_img1"
+            android:text="会议通知" />
+
+        <include layout="@layout/right_arrow"></include>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mynotificationlist_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/editext_yb">
+
+
+        <ImageView
+            android:id="@+id/mynotificationlist_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/sfcheck_dangrec" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:layout_toRightOf="@id/mynotificationlist_img2"
+            android:text="上级文件" />
+
+        <include layout="@layout/right_arrow"></include>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mynotificationlist_rl3"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/editext_yb">
+
+
+        <ImageView
+            android:id="@+id/mynotificationlist_img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/sfcheck_reform" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:layout_toRightOf="@id/mynotificationlist_img3"
+            android:text="交办事项" />
+
+        <include layout="@layout/right_arrow"></include>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mynotificationlist_rl4"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/editext_yb">
+
+
+        <ImageView
+            android:id="@+id/mynotificationlist_img4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/sfcheck_vdanger" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:layout_toRightOf="@id/mynotificationlist_img4"
+            android:text="其他" />
+
+        <include layout="@layout/right_arrow"></include>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

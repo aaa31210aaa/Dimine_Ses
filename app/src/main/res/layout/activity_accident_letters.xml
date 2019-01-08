@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home_content.AccidentLetters">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/TitleHeight">
+
+            <include
+                android:id="@+id/accident_letters_back"
+                layout="@layout/back_base"></include>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/MyAccidentPresentation"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Title2" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gray_qian"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50px">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_centerVertical="true"
+                        android:background="@color/gray_deep" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:background="@color/orange"
+                        android:text="事故信息"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="700px"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:text="事故名称" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/editext_yb"
+                            android:hint="请输入事故名称"
+                            android:paddingLeft="10px"
+                            android:textColorHint="@color/gray_deep" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:text="事故类别" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/input_class"
+                            android:hint="选择事故类别"
+                            android:paddingLeft="10px"
+                            android:textColorHint="@color/gray_deep" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:text="事故种类" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/input_class"
+                            android:hint="选择事故种类"
+                            android:paddingLeft="10px"
+                            android:textColorHint="@color/gray_deep" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:text="事故等级" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/input_class"
+                            android:hint="选择事故等级"
+                            android:paddingLeft="10px"
+                            android:textColorHint="@color/gray_deep" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:text="事故单位" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/input_class"
+                            android:hint="选择事故单位"
+                            android:paddingLeft="10px"
+                            android:textColorHint="@color/gray_deep" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:text="单位负责人" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/editext_yb"
+                            android:hint="点击获取负责人"
+                            android:paddingLeft="10px"
+                            android:textColorHint="@color/gray_deep" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center"
+                            android:text="初步原因分析" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/editext_yb"
+                            android:hint="点击选择原因"
+                            android:paddingLeft="10px"
+                            android:textColorHint="@color/gray_deep" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50px">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_centerVertical="true"
+                        android:background="@color/gray_deep" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:background="@color/yellow_orange"
+                        android:text="时间地点"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="事故时间" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/editext_yb"
+                        android:hint="请点击选择时间"
+                        android:paddingLeft="10px"
+                        android:textColorHint="@color/gray_deep" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="事故地点" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/editext_yb"
+                        android:hint="请输入事故地点"
+                        android:paddingLeft="10px"
+                        android:textColorHint="@color/gray_deep" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50px">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_centerVertical="true"
+                        android:background="@color/gray_deep" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:background="@color/blue_deep"
+                        android:text="损失情况"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <!--损失情况-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="轻伤人数" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/editext_yb"
+                        android:hint="请输入数字"
+                        android:paddingLeft="10px"
+                        android:textColorHint="@color/gray_deep" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="人" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="重伤人数" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/editext_yb"
+                        android:hint="请输入数字"
+                        android:paddingLeft="10px"
+                        android:textColorHint="@color/gray_deep" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="人" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="失踪人数" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/editext_yb"
+                        android:hint="请输入数字"
+                        android:paddingLeft="10px"
+                        android:textColorHint="@color/gray_deep" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="人" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="死亡人数" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/editext_yb"
+                        android:hint="请输入数字"
+                        android:paddingLeft="10px"
+                        android:textColorHint="@color/gray_deep" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="人" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="损失预估" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10px"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/editext_yb"
+                        android:hint="请输入数字"
+                        android:paddingLeft="10px"
+                        android:textColorHint="@color/gray_deep" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:text="元" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50px">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_centerVertical="true"
+                        android:background="@color/gray_deep" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:background="@color/orange"
+                        android:text="填写情况"
+                        android:textColor="@color/white" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="10px"
+                    android:text="事故简要经过" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="top"
+                    android:hint="请输入相应记录..."
+                    android:inputType="textMultiLine"
+                    android:padding="10px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="10px"
+                    android:text="现场处理情况" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="top"
+                    android:hint="请输入相应记录..."
+                    android:inputType="textMultiLine"
+                    android:padding="10px" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="10px"
+                    android:text="其他情况汇报" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="top"
+                    android:hint="请输入相应记录..."
+                    android:inputType="textMultiLine"
+                    android:padding="10px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="20px"
+                    android:text="拍   照" />
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="20px"
+                    android:background="@drawable/icon_addpic_unfocused" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50px"
+                        android:text="本地选择" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拍照" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/accident_letters_submit"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@color/blue_deep"
+            android:text="提   交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

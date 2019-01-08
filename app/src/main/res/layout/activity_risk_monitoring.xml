@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home_content.RiskMonitoring">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <include
+            android:id="@+id/risk_monitoring_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="@string/Fxjk" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/gray_qian">
+
+        <TextView
+            android:id="@+id/risk_street_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/editext_yb"
+            android:drawableRight="@drawable/xxjt"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/risk_level_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/editext_yb"
+            android:drawableRight="@drawable/xxjt"
+            android:gravity="center" />
+
+
+        <TextView
+            android:id="@+id/risk_industry_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/editext_yb"
+            android:drawableRight="@drawable/xxjt"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/risk_monitoring_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.amap.api.maps.MapView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="60px"
+            android:background="@drawable/editext_yb"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/risk_monitoring_imagebtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5px"
+                android:background="@drawable/mydw" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

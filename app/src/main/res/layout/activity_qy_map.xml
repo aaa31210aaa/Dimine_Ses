@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="enterprise_information.QyMap">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/blue_deep">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="@string/MapAddress" />
+
+        <ImageView
+            android:id="@+id/qy_map_back"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:background="@drawable/back"></ImageView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/qy_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="50px"
+            android:background="@drawable/editext_yb"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/qy_map_imagebtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5px"
+                android:background="@drawable/mydw" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

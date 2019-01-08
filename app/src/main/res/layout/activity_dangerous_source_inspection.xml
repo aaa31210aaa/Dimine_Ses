@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="risk_management.DangerousSourceInspection">
+
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <include
+            android:id="@+id/dangerous_source_inspection_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="危险源选择"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title2" />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/title_img"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:text="请选择危险源进行下一步操作"
+        android:textColor="@color/blue_deep"
+        android:textSize="40px" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="20px"
+        android:background="@color/gray_deep" />
+
+</LinearLayout>

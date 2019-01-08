@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="security_check.SafetyCheckList">
+
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <include
+            android:id="@+id/safety_check_list_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/safety_check_list"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title2" />
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/title_img"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:text="@string/safety_check_list_mtitle"
+        android:textColor="@color/blue_deep"
+        android:textSize="40px" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="20px"
+        android:background="@color/gray_deep" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/safety_check_rl1"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/editext_yb">
+
+
+                <ImageView
+                    android:id="@+id/safety_check_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/sfcheck_check" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:layout_toRightOf="@id/safety_check_img1"
+                    android:text="办公室冬季安全用电检查" />
+
+                <include layout="@layout/right_arrow"></include>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/safety_check_rl2"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/editext_yb">
+
+
+                <ImageView
+                    android:id="@+id/safety_check_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/sfcheck_dangrec" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:layout_toRightOf="@id/safety_check_img2"
+                    android:text="民爆物品安全检查" />
+
+                <include layout="@layout/right_arrow"></include>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/safety_check_rl3"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/editext_yb">
+
+
+                <ImageView
+                    android:id="@+id/safety_check_img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/sfcheck_vdanger" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:layout_toRightOf="@id/safety_check_img3"
+                    android:text="公司月度综合大检查" />
+
+                <include layout="@layout/right_arrow"></include>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="mynotification_detail.MyNotificationDetail">
+
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mynotification_detail_title_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title2" />
+
+        <include
+            android:id="@+id/mynotification_detail_back"
+            layout="@layout/back_base"></include>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notification_detail_tilte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="50px"
+                android:text=""
+                android:textSize="@dimen/Title3" />
+
+            <TextView
+                android:id="@+id/notification_detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_margin="20px"
+                android:background="@color/gray_deep" />
+
+            <TextView
+                android:id="@+id/notification_detail_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

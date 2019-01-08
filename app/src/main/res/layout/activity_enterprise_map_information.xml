@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="enterprise_information.EnterpriseMapInformation">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="@string/EnterpriseDetailsTitle" />
+
+        <TextView
+            android:id="@+id/map_information_see"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:gravity="center_vertical"
+            android:text="查看地图"
+            android:textColor="@color/white" />
+
+        <include
+            android:id="@+id/enterprise_information_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5px"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="企业名称" />
+
+                    <TextView
+                        android:id="@+id/map_information_companyname"
+                        style="@style/QyXxTv"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/EstablishmentTime" />
+
+                    <TextView
+                        android:id="@+id/map_information_establishmenttime"
+                        style="@style/QyXxTv"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/LegalRepresentative" />
+
+                    <TextView
+                        android:id="@+id/map_information_legalrepresentative"
+                        style="@style/QyXxTv"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/DocumentCode" />
+
+                    <TextView
+                        android:id="@+id/map_information_documentcode"
+                        style="@style/QyXxTv"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/EconomicType" />
+
+                    <TextView
+                        android:id="@+id/map_information_economictype"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/MajorIndustryAreas" />
+
+                    <TextView
+                        android:id="@+id/map_information_majorindustryareas"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/CompetentDepartment" />
+
+                    <TextView
+                        android:id="@+id/map_information_competentdepartment"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/NumberOfEmployees" />
+
+                    <TextView
+                        android:id="@+id/map_information_numberofemployees"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/RegisteredCapital" />
+
+                    <TextView
+                        android:id="@+id/map_information_registeredcapital"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/mEnterpriseAddress" />
+
+                    <TextView
+                        android:id="@+id/map_information_enterpriseaddress"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/RiskLevel" />
+
+                    <TextView
+                        android:id="@+id/map_information_risklevel"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/MatchWrap">
+
+                    <TextView
+                        style="@style/QyXxTv"
+                        android:text="@string/Qypf" />
+
+                    <TextView
+                        android:id="@+id/map_information_score"
+                        style="@style/QyXxTv"
+                        android:text="" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_wxy"
+                    style="@style/QyXxLj"
+                    android:text="@string/Wxy"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_yhxx"
+                    style="@style/QyXxLj"
+                    android:text="@string/Yhxx"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_scxx"
+                    style="@style/QyXxLj"
+                    android:text="安全检查"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_gzzd"
+                    style="@style/QyXxLj"
+                    android:text="@string/Gzzd"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_zywsxx"
+                    style="@style/QyXxLj"
+                    android:text="职业卫生"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_yjjyxx"
+                    style="@style/QyXxLj"
+                    android:text="应急预案"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_aqjypx"
+                    style="@style/QyXxLj"
+                    android:text="安全培训"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_aqsctr"
+                    style="@style/QyXxLj"
+                    android:text="安全投入"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_bmgl"
+                    style="@style/QyXxLj"
+                    android:text="部门管理"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_rygl"
+                    style="@style/QyXxLj"
+                    android:text="人员管理"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_tzsb"
+                    style="@style/QyXxLj"
+                    android:text="特种设备"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_yjwz"
+                    style="@style/QyXxLj"
+                    android:text="应急物资"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_yjyl"
+                    style="@style/QyXxLj"
+                    android:text="应急演练"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+                <cn.bingoogolapple.badgeview.BGABadgeTextView
+                    android:id="@+id/map_information_qyzz"
+                    style="@style/QyXxLj"
+                    android:text="企业证照"
+                    app:badge_dragable="false"
+                    app:badge_padding = "3dp"
+                    app:badge_gravity="rightTop"/>
+
+                <TextView
+                   style="@style/Kong" />
+
+                <TextView
+                    style="@style/Kong" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

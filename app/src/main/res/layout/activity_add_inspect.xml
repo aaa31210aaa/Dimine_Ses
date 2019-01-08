@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home_content.AddInspect">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <include
+            android:id="@+id/add_inspect_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="@string/AddInspectTitle" />
+
+        <ImageView
+            android:id="@+id/add_inspect_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/maging_right"
+            android:background="@drawable/msubmit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="排查类型:"
+                android:textSize="@dimen/Title3" />
+
+            <EditText
+                android:id="@+id/add_inspect_type"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15px"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:hint="@string/HintInspectType"
+                android:padding="10px"
+                android:singleLine="true"
+                android:text=""
+                android:textColorHint="@color/gray_deep" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="排查名称:"
+                android:textSize="@dimen/Title3" />
+
+            <EditText
+                android:id="@+id/add_inspect_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15px"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:hint="@string/HintInspectName"
+                android:padding="10px"
+                android:singleLine="true"
+                android:text=""
+                android:textColorHint="@color/gray_deep" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="排查人:"
+                android:textSize="@dimen/Title3" />
+
+            <EditText
+                android:id="@+id/add_inspect_man"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15px"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:hint="@string/HintInspectMan"
+                android:padding="10px"
+                android:singleLine="true"
+                android:text=""
+                android:textColorHint="@color/gray_deep" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15px"
+                android:layout_weight="0.4"
+                android:gravity="top|center"
+                android:text="备注:"
+                android:textSize="@dimen/Title3" />
+
+            <EditText
+                android:id="@+id/add_inspect_bz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="15px"
+                android:layout_weight="1"
+                android:background="@drawable/editext_yb"
+                android:gravity="top"
+                android:hint="@string/HintInspectBz"
+                android:padding="10px"
+                android:singleLine="true"
+                android:text=""
+                android:textColorHint="@color/gray_deep" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+    </FrameLayout>
+</LinearLayout>

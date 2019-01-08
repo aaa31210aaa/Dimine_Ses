@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="enterprise_information.WeiXianYuanDetail">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="危险源详情" />
+
+        <include
+            android:id="@+id/wxy_detail_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/outLl"
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="主要风险点" />
+
+                <TextView
+                    android:id="@+id/wxy_detail_mainrisk"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="主要危险" />
+
+                <TextView
+                    android:id="@+id/wxy_detail_maindanger"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="风险类型" />
+
+                <TextView
+                    android:id="@+id/wxy_detail_risktypename"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="是否重大危险源" />
+
+                <TextView
+                    android:id="@+id/wxy_detail_iszdwxy"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="创建时间" />
+
+                <TextView
+                    android:id="@+id/wxy_detail_createdate"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="备注" />
+
+            <TextView
+                android:id="@+id/wxy_detail_memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:background="@drawable/editext_yb"
+                android:minHeight="200px"
+                android:padding="5px"
+                android:text="" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/wxy_detai_filelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"></ListView>
+
+</LinearLayout>

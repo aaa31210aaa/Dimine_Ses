@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home_content.QyZzDetail">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="企业证照详情" />
+
+        <include
+            android:id="@+id/qyzz_detail_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000px">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="证照类型" />
+
+                <TextView
+                    android:id="@+id/qyzz_detail_cftypename"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="证件号码" />
+
+                <TextView
+                    android:id="@+id/qyzz_detail_certificate"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="证件名称" />
+
+                <TextView
+                    android:id="@+id/qyzz_detail_cardname"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="负责人员" />
+
+                <TextView
+                    android:id="@+id/qyzz_detail_administrator"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="颁布时间" />
+
+                <TextView
+                    android:id="@+id/qyzz_detail_carddate"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="固定电话" />
+
+                <TextView
+                    android:id="@+id/qyzz_detail_mhtelephone"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="移动电话" />
+
+                <TextView
+                    android:id="@+id/qyzz_detail_mhmobilephone"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="岗位" />
+
+                <TextView
+                    android:id="@+id/qyzz_detail_postion"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="有效开始日期" />
+
+                <TextView
+                    android:id="@+id/qyzz_detail_yxstardate"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="有效结束日期" />
+
+                <TextView
+                    android:id="@+id/qyzz_detail_yxenddate"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="企业名称" />
+
+                <TextView
+                    android:id="@+id/qyzz_detail_qyname"
+                    style="@style/SgxqContent"
+                    android:text=""
+                    android:textColor="@color/blue_deep" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+            <!--<TextView-->
+            <!--style="@style/SgxqTitle"-->
+            <!--android:text="附件名称" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tzsb_detail_filename"-->
+            <!--style="@style/SgxqContent"-->
+            <!--android:text="" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20px"-->
+            <!--android:layout_marginTop="20px"-->
+            <!--android:text="备注：" />-->
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tzsb_detail_memo"-->
+            <!--style="@style/SgxqContent"-->
+            <!--android:gravity="top"-->
+            <!--android:minHeight="200px"-->
+            <!--android:paddingLeft="10px"-->
+            <!--android:text="" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/qyzz_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:background="@color/white"></ListView>
+</LinearLayout>

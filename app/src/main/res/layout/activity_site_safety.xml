@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home_content.SiteSafety">
+
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <include
+            android:id="@+id/site_safety_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="现场安全"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title2" />
+
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/title_img"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_qian"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/site_safety_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="50px"
+            android:background="@drawable/editext_yb">
+
+
+            <ImageView
+                android:id="@+id/safety_check_list_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/sitesf_meeting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@id/safety_check_list_img"
+                android:text="班前会议记录" />
+
+            <include layout="@layout/right_arrow"></include>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/site_safety_rl2"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="50px"
+            android:background="@drawable/editext_yb">
+
+
+            <ImageView
+                android:id="@+id/hidden_trouble_registration_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/sitesf_ticket" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@id/hidden_trouble_registration_img"
+                android:text="危险作业许可证" />
+
+            <include layout="@layout/right_arrow"></include>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/site_safety_rl3"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="50px"
+            android:background="@drawable/editext_yb">
+
+
+            <ImageView
+                android:id="@+id/hidden_rectification_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/sitesf_underconfir" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@id/hidden_rectification_img"
+                android:text="井下工作面安全确认" />
+
+            <include layout="@layout/right_arrow"></include>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

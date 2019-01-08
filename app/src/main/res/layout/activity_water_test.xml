@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.dimine_sis.WaterTest">
+
+    <TextView
+        android:id="@+id/water_test_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50px"
+        android:background="@color/blue_deep"
+        android:padding="30px"
+        android:text="拍照"
+        android:textColor="@color/white" />
+
+
+    <com.example.administrator.dimine_sis.MyGridView
+        android:id="@+id/water_test_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30px"
+        android:horizontalSpacing="@dimen/space_size"
+        android:verticalSpacing="@dimen/space_size"></com.example.administrator.dimine_sis.MyGridView>
+
+    <ImageView
+        android:id="@+id/water_test_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300px"
+         />
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="accident.AccidentPresentationDetail">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="@string/AccidentDetailsTitle" />
+
+        <include
+            android:id="@+id/accident_presentation_detail_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="@string/deptname" />
+
+                <TextView
+                    android:id="@+id/accident_detail_deptname"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="@string/aititle" />
+
+                <TextView
+                    android:id="@+id/accident_detail_aititle"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="@string/aldate" />
+
+                <TextView
+                    android:id="@+id/accident_detail_aldate"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="@string/aitypename" />
+
+                <TextView
+                    android:id="@+id/accident_detail_aitypename"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="@string/ailevelname" />
+
+                <TextView
+                    android:id="@+id/accident_detail_ailevelname"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="@string/swnum" />
+
+                <TextView
+                    android:id="@+id/accident_detail_swnum"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="@string/zsnum" />
+
+                <TextView
+                    android:id="@+id/accident_detail_zsnum"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="@string/qsnum" />
+
+                <TextView
+                    android:id="@+id/accident_detail_qsnum"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="@string/sznum" />
+
+                <TextView
+                    android:id="@+id/accident_detail_sznum"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+            <!--<TextView-->
+            <!--style="@style/SgxqTitle"-->
+            <!--android:text="@string/areaname" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/accident_detail_areaname"-->
+            <!--style="@style/SgxqContent" />-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="@string/sbr" />
+
+                <TextView
+                    android:id="@+id/accident_detail_sbr"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="@string/AccidentDetailsTitle" />
+
+            <TextView
+                android:id="@+id/accident_content_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200px"
+                android:layout_margin="20px"
+                android:background="@drawable/editext_yb"
+                android:padding="5px"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

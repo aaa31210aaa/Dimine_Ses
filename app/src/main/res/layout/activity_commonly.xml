@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="risk_management.AddCommonly">
+
+
+    <RelativeLayout
+        style="@style/TitleHeight"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <include
+            android:id="@+id/commonly_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/risk_management_rl3_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title2" />
+
+        <TextView
+            android:id="@+id/temporary_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:text="临时数据"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingBottom="30px"
+                    android:paddingTop="30px"
+                    android:text="@string/HiddenName" />
+
+                <EditText
+                    android:id="@+id/commonly_hidden_name_etv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:hint="@string/PleaseInputHiddenName"
+                    android:padding="10px"
+                    android:text=""
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingBottom="30px"
+                    android:paddingTop="30px"
+                    android:text="@string/PersonLiable" />
+
+                <EditText
+                    android:id="@+id/commonly_personLiable_etv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:hint="@string/PleaseInputZrr"
+                    android:padding="10px"
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/ClassificationOfHiddenDangers" />
+
+
+                <TextView
+                    android:id="@+id/commonly_classification"
+                    style="@style/XlTextView"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/rectification_type" />
+
+
+                <TextView
+                    android:id="@+id/commonly_type"
+                    style="@style/XlTextView"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/InvestigationDate" />
+
+                <TextView
+                    android:id="@+id/commonly_investigation_date_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:drawableRight="@drawable/mdate"
+                    android:gravity="center"
+                    android:paddingLeft="10px"
+                    android:text="2017-01-28"
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/GovernanceDeadline" />
+
+                <TextView
+                    android:id="@+id/commonly_governance_deadline_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:drawableRight="@drawable/mdate"
+                    android:gravity="center"
+                    android:paddingLeft="10px"
+                    android:text="2017-01-28"
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingBottom="30px"
+                    android:paddingTop="30px"
+                    android:text="@string/SpecificLocationOfHiddenDanger" />
+
+                <EditText
+                    android:id="@+id/commonly_specific_location_etv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:hint="@string/PleaseInputLocation"
+                    android:padding="10px"
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingBottom="30px"
+                    android:paddingTop="30px"
+                    android:text="@string/HiddenDescription" />
+
+                <EditText
+                    android:id="@+id/commonly_yhms"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:hint="@string/PleaseInputYhms"
+                    android:paddingLeft="10px"
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:paddingBottom="30px"
+                    android:paddingTop="30px"
+                    android:text="@string/TreatmentScheme" />
+
+                <EditText
+                    android:id="@+id/commonly_zyzlfa"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:hint="@string/PleaseInputZyzlfa"
+                    android:paddingLeft="10px"
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/green"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/SelectPicture" />
+
+                <RadioGroup
+                    android:id="@+id/commonly_radiogroup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/commonly_radiobutton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图片" />
+
+                    <RadioButton
+                        android:id="@+id/commonly_radiobutton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="100px"
+                        android:text="现场环境限制" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <com.example.administrator.dimine_sis.MyGridView
+                android:id="@+id/commonly_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30px"
+                android:horizontalSpacing="@dimen/space_size"
+                android:verticalSpacing="@dimen/space_size"
+                ></com.example.administrator.dimine_sis.MyGridView>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/commonly_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@drawable/fillin_btn"
+        android:text="@string/Submit"
+        android:textColor="@color/white" />
+</LinearLayout>

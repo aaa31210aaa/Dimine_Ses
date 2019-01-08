@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/sc_information_item_ll"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/recycler_bg">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/sc_information_item_checkname"-->
+    <!--style="@style/QyListItemTitle" />-->
+
+    <!--<LinearLayout style="@style/QyListItemContentLL">-->
+
+    <!--<LinearLayout style="@style/QyListItemContentItemLL">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:text="查处问题：" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/sc_information_item_problems"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:text="" />-->
+    <!--</LinearLayout>-->
+
+    <!--<include layout="@layout/green_h_line"></include>-->
+
+    <!--<LinearLayout style="@style/QyListItemContentItemLL">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:text="是否提交：" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/sc_information_item_iscommit"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:text="" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sc_information_item_checkname"
+            style="@style/TextStyle" />
+
+        <TextView
+            android:id="@+id/sc_information_item_problems"
+            style="@style/TextStyle" />
+
+        <TextView
+            android:id="@+id/sc_information_item_iscommit"
+            style="@style/TextStyle" />
+
+        <TextView
+            android:id="@+id/sc_infomation_date"
+            style="@style/TextStyle" />
+
+        <TextView
+            android:id="@+id/sc_information_item_qyname"
+            style="@style/TextStyle" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.1"
+        android:gravity="center">
+
+        <include layout="@layout/right_arrow"></include>
+
+    </LinearLayout>
+
+</LinearLayout>

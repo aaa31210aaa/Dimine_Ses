@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home_content.RyGlDetail">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="安全人员管理详情" />
+
+        <include
+            android:id="@+id/rygl_detail_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000px">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="人员类型" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_sptypename"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="姓名" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_mainhead"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="所在部门" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_deptname"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="移动电话" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_mhmobilephone"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="电子邮箱" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_mhemail"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="身份证编号" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_peopleno"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="职称" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_titles"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="职位" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_postion"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="证书编号" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_cardno"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="有效日期" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_yxstardate"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="截止日期" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_yxenddate"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="系统用户" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_isusername"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="企业名称" />
+
+                <TextView
+                    android:id="@+id/rygl_detail_qyname"
+                    style="@style/SgxqContent"
+                    android:textColor="@color/blue_deep"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+            <!--<TextView-->
+            <!--style="@style/SgxqTitle"-->
+            <!--android:text="附件名称" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/rygl_detail_filename"-->
+            <!--style="@style/SgxqContent"-->
+            <!--android:text="" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/rygl_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50px"
+        android:background="@color/white"></ListView>
+
+</LinearLayout>

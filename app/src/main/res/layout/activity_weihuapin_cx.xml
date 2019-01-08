@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home_content.WeihuapinCx">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="危化品查询" />
+
+        <include
+            android:id="@+id/weihuapin_back"
+            layout="@layout/back_base"></include>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <RelativeLayout
+        android:id="@+id/weihuapin_flfg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/click_style">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="法律法规查询"
+        android:textSize="@dimen/Title3" />
+
+        <ImageView
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50px"
+        android:background="@drawable/flfg" />
+
+        <ImageView
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20px"
+        android:background="@drawable/right" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/gray_line"></include>
+
+        <RelativeLayout
+            android:id="@+id/weihuapin_whp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/click_style">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="危化品书签查询"
+                android:textSize="@dimen/Title3" />
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/wfp" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:background="@drawable/right" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/gray_line"></include>
+
+
+        <RelativeLayout
+            android:id="@+id/weihuapin_ljl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/click_style">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="危险源临界量查询"
+                android:textSize="@dimen/Title3" />
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/ljl" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:background="@drawable/right" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/gray_line"></include>
+
+        <RelativeLayout
+            android:id="@+id/weihuapin_gdwp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/click_style">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="高毒物品信息查询"
+                android:textSize="@dimen/Title3" />
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/gdwp" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:background="@drawable/right" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/gray_line"></include>
+
+        <RelativeLayout
+            android:id="@+id/weihuapin_zywh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/click_style">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="职业危害接触限值查询"
+                android:textSize="@dimen/Title3" />
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/zywh" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:background="@drawable/right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+
+    </LinearLayout>
+
+</LinearLayout>

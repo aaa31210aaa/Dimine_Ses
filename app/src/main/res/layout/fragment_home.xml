@@ -1,0 +1,347 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tab.HomeFragment">
+
+
+    <!--<GridView-->
+    <!--android:id="@+id/gridview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:numColumns="3"></GridView>-->
+
+
+    <LinearLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="@string/home_title_name" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                app:canLoop="true">
+
+            </com.bigkoo.convenientbanner.ConvenientBanner>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <include layout="@layout/gray_line"></include>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/testdownload"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="下载" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/canceldown"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="取消下载" />-->
+
+            <!--</LinearLayout>-->
+
+            <include layout="@layout/gray_line"></include>
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/home_wxy"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="20px"-->
+            <!--android:paddingLeft="20px">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/wxy" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="50px"-->
+            <!--android:text="企业危险源登记信息"-->
+            <!--android:textSize="@dimen/Title3" />-->
+            <!--</LinearLayout>-->
+
+            <!--<include layout="@layout/gray_line"></include>-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/home_yhxx"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="20px"-->
+            <!--android:paddingLeft="20px">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/yhxx" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="50px"-->
+            <!--android:text="企业隐患登记信息"-->
+            <!--android:textSize="@dimen/Title3" />-->
+            <!--</LinearLayout>-->
+
+            <!--<include layout="@layout/gray_line"></include>-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/home_scxx"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="20px"-->
+            <!--android:paddingLeft="20px">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/scxx" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="50px"-->
+            <!--android:text="企业安全检查信息"-->
+            <!--android:textSize="@dimen/Title3" />-->
+            <!--</LinearLayout>-->
+
+            <!--<include layout="@layout/gray_line"></include>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/home_gzzd"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:padding="20px"-->
+                <!--android:paddingLeft="20px">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/gzzd" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="50px"-->
+                    <!--android:text="安全生产规章制度"-->
+                    <!--android:textSize="@dimen/Title3" />-->
+            <!--</LinearLayout>-->
+
+            <!--<include layout="@layout/gray_line"></include>-->
+
+
+            <LinearLayout
+                android:id="@+id/home_rygl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20px"
+                android:paddingLeft="20px">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rygl" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="人员管理信息"
+                    android:textSize="@dimen/Title3" />
+            </LinearLayout>
+
+            <include layout="@layout/gray_line"></include>
+
+            <LinearLayout
+                android:id="@+id/home_zywsxx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20px"
+                android:paddingLeft="20px">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wsxx" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="职业卫生信息"
+                    android:textSize="@dimen/Title3" />
+            </LinearLayout>
+
+            <include layout="@layout/gray_line"></include>
+
+            <LinearLayout
+                android:id="@+id/home_yjjyxx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20px"
+                android:paddingLeft="20px">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yjjy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="应急预案信息"
+                    android:textSize="@dimen/Title3" />
+            </LinearLayout>
+
+
+            <include layout="@layout/gray_line"></include>
+
+            <LinearLayout
+                android:id="@+id/home_aqjypx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20px"
+                android:paddingLeft="20px">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aqjypx" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="安全教育培训"
+                    android:textSize="@dimen/Title3" />
+            </LinearLayout>
+
+            <include layout="@layout/gray_line"></include>
+
+            <LinearLayout
+                android:id="@+id/home_tzsb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20px"
+                android:paddingLeft="20px">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tzsb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="特种设备信息"
+                    android:textSize="@dimen/Title3" />
+            </LinearLayout>
+
+            <include layout="@layout/gray_line"></include>
+
+            <LinearLayout
+                android:id="@+id/home_qyzz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20px"
+                android:paddingLeft="20px">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/qyzz" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="企业证照信息"
+                    android:textSize="@dimen/Title3" />
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/home_aqsctr"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="20px"-->
+            <!--android:paddingLeft="20px">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/aqsctr" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="50px"-->
+            <!--android:text="安全生产投入"-->
+            <!--android:textSize="@dimen/Title3" />-->
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="enterprise_information.ScInfomationDetail">
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="安全生产详情信息" />
+
+        <include
+            android:id="@+id/sc_infomation_detail_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="安全检查项目" />
+
+                <TextView
+                    android:id="@+id/sc_infomation_detail_checkname"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="查处问题" />
+
+                <TextView
+                    android:id="@+id/sc_infomation_detail_problems"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="是否提交" />
+
+                <TextView
+                    android:id="@+id/sc_infomation_detail_iscommit"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="安全检查场所" />
+
+                <TextView
+                    android:id="@+id/sc_infomation_detail_checkadd"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="检查人员" />
+
+                <TextView
+                    android:id="@+id/sc_infomation_detail_checkman"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="检查时间" />
+
+                <TextView
+                    android:id="@+id/sc_infomation_detail_scdate"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="处理方法" />
+
+                <TextView
+                    android:id="@+id/sc_infomation_detail_handlemethod"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+            <!--<TextView-->
+            <!--style="@style/SgxqTitle"-->
+            <!--android:text="附件名称" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/sc_infomation_detail_filename"-->
+            <!--style="@style/SgxqContent" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="备注" />
+
+            <TextView
+                android:id="@+id/sc_infomation_detail_memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:background="@drawable/editext_yb"
+                android:minHeight="200px"
+                android:padding="5px"
+                android:text="" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/sc_infomation_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"></ListView>
+
+</LinearLayout>

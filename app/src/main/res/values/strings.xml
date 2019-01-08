@@ -1,0 +1,279 @@
+<resources>
+    <string name="app_name">安全监管</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_news">消息</string>
+    <string name="tab_manage">管理</string>
+    <string name="tab_mine">我的</string>
+
+    <!--登陆页面-->
+    <string name="app_title">长沙市望城区安监局</string>
+    <string name="app_title2">安全生产事故隐患排查治理系统</string>
+    <string name="login_account_hint">请输入账号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="connect_err">连接失败，请检查网络</string>
+
+    <!--首页-->
+    <string name="home_title_name">主页</string>
+    <!--通知公告-->
+    <string name="mynotification_title_name">通知公告</string>
+    <string name="SearchViewNotification">请输入进行查询...</string>
+
+    <!--通知公告详情-->
+    <string name="mynotification_detail_title_name">公告详情</string>
+
+
+    <!--安全检查-->
+    <string name="security_check_title_name">安全检查</string>
+    <string name="safety_check_list">安全检查表</string>
+    <string name="hidden_trouble_registration">隐患登记</string>
+    <string name="hidden_rectification">隐患整改</string>
+    <string name="review_and_acceptance">复查验收</string>
+    <string name="safety_check_list_mtitle">请选择检查表进行下一步操作</string>
+    <string name="hidden_rectification_title_name">隐患登记</string>
+    <string name="hidden_rectification_mtitle1">选择类型</string>
+    <string name="hidden_rectification_mtitle2">整改信息</string>
+    <string name="hidden_rectification_mtitle3">隐患描述</string>
+
+    <!--隐患排查-->
+    <string name="hidden_danger_title">隐患排查</string>
+    <string name="hidden_danger_detail_title">隐患排查详情</string>
+    <string name="SelectAll">全选</string>
+
+    <!--隐患排查详情-->
+    <string name="General">一般</string>
+    <string name="Major">重大</string>
+
+
+    <!--隐患管理-->
+    <string name="risk_management_rl3_text">一般隐患管理</string>
+    <string name="risk_management_rl4_text">重大隐患管理</string>
+    <string name="risk_management_rl5_text">重大隐患复查</string>
+    <string name="risk_management_rl6_text">一般隐患查看</string>
+    <string name="risk_management_rl7_text">重大隐患查看</string>
+
+    <!--隐患管理-->
+    <string name="HiddenName">隐患名称</string>
+    <string name="PersonLiable">整改责任人</string>
+    <string name="ClassificationOfHiddenDangers">隐患类型分类</string>
+    <string name="rectification_type">整改类型</string>
+    <string name="InvestigationDate">排查日期</string>
+    <string name="GovernanceDeadline">治理截止日期</string>
+    <string name="SpecificLocationOfHiddenDanger">隐患具体位置</string>
+    <string name="HiddenDescription">隐患描述</string>
+    <string name="YsZj">验收专家及人员</string>
+    <string name="YsDate">现场验收时间</string>
+    <string name="YsAddress">验收地址</string>
+    <string name="YsSituation">验收情况</string>
+    <string name="PleaseInputYsZj">请输入验收专家及人员</string>
+    <string name="PleaseInputYsDate">请输入现场验收时间</string>
+    <string name="PleaseInputYsAddress">请输入验收地址</string>
+    <string name="PleaseInputYsSituation">请输入验收情况</string>
+
+    <string name="PleaseInput">请输入...</string>
+    <string name="PleaseInputHiddenName">请输入隐患名称</string>
+    <string name="PleaseInputZrr">请输入整改责任人</string>
+    <string name="PleaseInputLocation">请输入隐患具体位置</string>
+    <string name="PleaseInputYhms">请输入隐患描述</string>
+    <string name="TreatmentScheme">主要治理方案</string>
+    <string name="PleaseInputZyzlfa">请输入主要治理方案</string>
+    <string name="PleaseInputZj">请输入验收专家及人员</string>
+    <string name="SelectPicture">隐患情况图片</string>
+    <string name="ImageName">图片</string>
+    <string name="FieldEnvironmentalRestriction">现场环境限制</string>
+    <string name="LocalSelect">本地选择</string>
+    <string name="Photograph">拍照</string>
+    <string name="Submit">提  交</string>
+    <string name="NumberOfCasualties">伤亡人数</string>
+    <string name="EconomicLoss">经济损失</string>
+    <string name="TimeAndRange">时间和范围</string>
+    <string name="HiddenLevel">隐患级别</string>
+
+
+    <!--执法检查-->
+    <string name="LawEnforcementInspection">执法检查</string>
+    <string name="SearchViewPrompting">"请输入企业名称，地址"</string>
+    <string name="InvestigationName">排查名称</string>
+    <string name="InvestigationType">排查类型:</string>
+    <string name="Investigators">排查人:</string>
+    <string name="AddInspectTitle">新增执法检查</string>
+    <string name="HintInspectType">请输入排查类型</string>
+    <string name="HintInspectName">请输入排查名称</string>
+    <string name="HintInspectMan">请输入排查人</string>
+    <string name="HintInspectBz">请输入备注</string>
+    <string name="InspectBz">备注</string>
+
+
+    <!--企业信息-->
+    <string name="EnterpriseInformationTitle">企业信息</string>
+    <string name="SupervisionDepartment">监管部门:</string>
+    <string name="EnterpriseAddress">企业地址:</string>
+    <string name="CompanyName">企业名称</string>
+    <string name="EnterpriseDetailsTitle">企业详细信息</string>
+    <string name="MapAddress">企业地理位置</string>
+    <string name="Fxjk">企业风险分级分类查询</string>
+    <string name="HiddenQy">隐患企业</string>
+    <string name="EstablishmentTime">成立时间</string>
+    <string name="LegalRepresentative">法定代表</string>
+    <string name="DocumentCode">证件代码</string>
+    <string name="EconomicType">经济类型</string>
+    <string name="MajorIndustryAreas">行业领域</string>
+    <string name="CompetentDepartment">主管部门</string>
+    <string name="NumberOfEmployees">员工人数</string>
+    <string name="RegisteredCapital">注册资金</string>
+    <string name="mEnterpriseAddress">企业地址</string>
+    <string name="RiskLevel">风险级别</string>
+    <string name="Qypf">企业评分</string>
+    <string name="Wxy">危险源</string>
+    <string name="Yhxx">隐患信息</string>
+    <string name="Aqscxx">安全生产信息</string>
+    <string name="Gzzd">安全制度</string>
+    <string name="ChooseQy">企业选择</string>
+    <string name="AddressDetail">详细地址：</string>
+    <string name="GzzdName">规章制度名称</string>
+    <string name="Efftime">生效时间：</string>
+    <string name="CbtypeName">规章制度类型：</string>
+
+
+    <!--数据统计-->
+    <string name="MonthlyReport">月报</string>
+    <string name="QuarterReport">季报</string>
+
+
+    <!--事故快报-->
+    <string name="MyAccidentPresentation">事故快报</string>
+    <string name="MyPublisher">发布人:</string>
+    <string name="MyReleaseTime">发布时间:</string>
+    <string name="SearchViewAccidentPresentation">请输入事故名称或发布人</string>
+    <!--事故详情-->
+    <string name="AccidentDetailsTitle">事故详情</string>
+    <string name="deptname">事故单位</string>
+    <string name="aititle">事故名称</string>
+    <string name="aldate">事故日期</string>
+    <string name="aitypename">事故分类</string>
+    <string name="ailevelname">事故等级</string>
+    <string name="swnum">死亡人数</string>
+    <string name="zsnum">重伤人数</string>
+    <string name="qsnum">轻伤人数</string>
+    <string name="procid">事故ID</string>
+    <string name="sbr">上报人</string>
+    <string name="sznum">失踪人口</string>
+    <string name="areaname">事故地区</string>
+
+
+    <!--事故填报-->
+    <string name="AddAccidentPresentationTitle">事故填报</string>
+    <string name="hintdeptname">请输入事故单位</string>
+    <string name="hintaititle">请输入事故名称</string>
+    <string name="hintswnum">请输入死亡人数</string>
+    <string name="hintzsnum">请输入重伤人数</string>
+    <string name="hintqsnum">请输入轻伤人数</string>
+    <string name="hintsznum">请输入失踪人数</string>
+    <string name="hintsgdq">请输入事故地区</string>
+    <string name="hintsbr">请输入上报人</string>
+    <string name="hintsgxq">请输入事故详情</string>
+    <string name="write_success">提交成功</string>
+    <string name="write_fail">提交失败</string>
+
+    <!--数据统计-->
+    <string name="DataReportTitle">数据统计</string>
+    <string name="ReportLittleTitle1">企业运行统计</string>
+    <string name="ReportZd1">企业用户</string>
+    <string name="ReportZd2">待审核企业</string>
+    <string name="ReportTjRq">统计日期</string>
+    <string name="ReportLittleTitle2">本月隐患登记处理情况统计</string>
+    <string name="ReportZd3">本月上报重大隐患</string>
+    <string name="ReportZddsh">等待审核的重大隐患</string>
+    <string name="ReportZdwzg">未整改完成的重大隐患</string>
+    <string name="ReportZd33">本月上报一般隐患</string>
+    <string name="ReportZd4">整改日期到期的一般隐患</string>
+    <string name="ReportZd44">未整改完成的一般隐患</string>
+    <string name="ReportZd5">等待审核的隐患</string>
+    <string name="ReportZd6">本月未上报企业</string>
+    <string name="ReportZd7">未整改完成隐患</string>
+    <string name="ReportLittleTitle3">本年隐患登记处理情况统计</string>
+    <string name="ReportZd8">本年度共排查隐患</string>
+    <string name="ReportZdPcYbyh">本年度共排查一般隐患</string>
+    <string name="ReportZdYzgYbyh">其中已整改一般隐患</string>
+    <string name="ReportZdWzgYbyh">其中未整改一般隐患</string>
+    <string name="ReportZdPcZdyh">本年度共排查重大隐患</string>
+    <string name="ReportZdYzgZdyh">其中已整改重大隐患</string>
+    <string name="ReportZdWzgZdyh">其中未整改重大隐患</string>
+
+
+    <string name="ReportZd9">共排查隐患</string>
+    <string name="ReportZd10">其中已整改</string>
+    <string name="ReportZd11">其中未整改</string>
+    <string name="ReportZd12">整改率</string>
+
+    <string name="Dwjia">家</string>
+    <string name="Dwtiao">条</string>
+
+
+    <!--消息-->
+    <string name="news_title_name">消息</string>
+    <!--我的-->
+    <string name="mine_title_name">我的</string>
+
+    <!--待办事宜-->
+    <string name="todo_title_name">待办事宜</string>
+    <string name="todo_check">请选择待办事项进行查看</string>
+    <!--已办事宜-->
+    <string name="done_title_name">已办事宜</string>
+    <string name="done_check">最近30天已办事项</string>
+
+    <!--修改密码-->
+    <string name="modify_password_title_name">修改密码</string>
+    <string name="modify_password_old">旧密码</string>
+    <string name="modify_password_new">新密码</string>
+    <string name="modify_password_again">确认密码</string>
+    <string name="modify_password_hint_old">输入当前密码</string>
+    <string name="modify_password_hint_new">输入新密码</string>
+    <string name="modify_password_hint_again">重复新密码</string>
+    <string name="modify_password_btn_text">提交</string>
+
+
+    <!--Toast提示语-->
+    <string name="click_agin">再按一次退出应用</string>
+    <string name="network_connection_failed">请检查网络...</string>
+    <string name="loading_write">请稍后...</string>
+    <string name="NotEmpty">账号或者密码不能为空</string>
+    <string name="login_success">登陆成功</string>
+    <string name="jiancha1">设备点检记录、运行记录、危险源点检记录、交接班记录以及班组安全活动记录等是否完整、良好。</string>
+    <string name="jiancha2">使用的工器具是否破损，安全性能是否可靠。</string>
+    <string name="mine_cancellation_dialog_title">注销</string>
+    <string name="mine_cancellation_dialog_content">请问是否要注销此账号</string>
+    <string name="mine_cancellation_dialog_btn1">取消</string>
+    <string name="mine_cancellation_dialog_btn2">确定</string>
+    <string name="network_error">连接失败</string>
+    <string name="loading">加载中...</string>
+    <string name="refreshed">刷新完成</string>
+    <string name="netcantuse">网络不可用</string>
+    <string name="remind">提醒</string>
+    <string name="submitting">正在提交...</string>
+    <string name="BatchDelete">批量删除</string>
+    <string name="Prompt">提示</string>
+    <string name="DeleteTemporaryData">是否删除这条临时数据</string>
+    <string name="DeleteSuccess">删除成功</string>
+    <string name="SaveData">保存临时数据</string>
+    <string name="NoNet">当前无网络，是否保存当前已填写的数据</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing emailcompletions."</string>
+
+
+</resources>

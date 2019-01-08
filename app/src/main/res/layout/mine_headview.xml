@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <com.example.administrator.dimine_sis.CircularImage
+            android:id="@+id/user_photo"
+            android:layout_width="260px"
+            android:layout_height="260px"
+            ></com.example.administrator.dimine_sis.CircularImage>
+
+        <TextView
+            android:id="@+id/mine_xtgly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_photo"
+            android:textColor="@color/white"
+            android:text="系统管理员"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/Title3" />
+
+        <TextView
+            android:id="@+id/mine_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_xtgly"
+            android:textColor="@color/white"
+            android:layout_marginTop="10px"
+            android:text=""
+            android:textSize="@dimen/Title4" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

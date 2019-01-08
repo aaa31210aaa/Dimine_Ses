@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="accident.AddAccidentPresentation">
+
+    <RelativeLayout
+        style="@style/TitleHeight"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <include
+            android:id="@+id/add_accident_presentation_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="@string/AddAccidentPresentationTitle" />
+
+
+        <ImageView
+            android:id="@+id/add_accident_presentation_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/maging_right"
+            android:background="@drawable/msubmit" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.3"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:text="@string/deptname" />
+
+
+            <EditText
+                android:id="@+id/add_accident_presentation_deptname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.7"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:hint="@string/hintdeptname"
+                android:text=""
+                android:textColorHint="@color/gray_deep"
+                android:textSize="@dimen/mr_text_size" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.3"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:text="@string/aititle" />
+
+
+            <EditText
+                android:id="@+id/add_accident_presentation_aititle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.7"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:hint="@string/hintaititle"
+                android:textColorHint="@color/gray_deep"
+                android:textSize="@dimen/mr_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.3"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:text="@string/aldate" />
+
+
+            <TextView
+                android:id="@+id/add_accident_presentation_aldate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.7"
+                android:background="@drawable/editext_yb"
+                android:drawableRight="@drawable/mdate"
+                android:gravity="center"
+                android:text="2017-2-27"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.3"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:text="@string/aitypename" />
+
+
+            <TextView
+                android:id="@+id/add_accident_presentation_aitypename"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7px"
+                android:layout_weight="0.7"
+                android:background="@drawable/editext_yb"
+                android:drawableRight="@drawable/xxjt"
+                android:gravity="center"
+                android:padding="10px"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/Title4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.3"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:text="@string/ailevelname" />
+
+
+            <TextView
+                android:id="@+id/add_accident_presentation_ailevelname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7px"
+                android:layout_weight="0.7"
+                android:background="@drawable/editext_yb"
+                android:drawableRight="@drawable/xxjt"
+                android:gravity="center"
+                android:padding="10px"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/Title4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.3"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:text="@string/swnum" />
+
+            <EditText
+                android:id="@+id/add_accident_presentation_swnum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.7"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:hint="@string/hintswnum"
+                android:inputType="number"
+                android:textColorHint="@color/gray_deep"
+                android:textSize="@dimen/mr_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.3"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:text="@string/zsnum" />
+
+            <EditText
+                android:id="@+id/add_accident_presentation_zsnum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.7"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:hint="@string/hintzsnum"
+                android:inputType="number"
+                android:textColorHint="@color/gray_deep"
+                android:textSize="@dimen/mr_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.3"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:text="@string/qsnum" />
+
+            <EditText
+                android:id="@+id/add_accident_presentation_qsnum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.7"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:hint="@string/hintqsnum"
+                android:inputType="number"
+                android:textColorHint="@color/gray_deep"
+                android:textSize="@dimen/mr_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.3"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:text="@string/sznum" />
+
+            <EditText
+                android:id="@+id/add_accident_presentation_sznum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.7"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:hint="@string/hintsznum"
+                android:inputType="number"
+                android:textColorHint="@color/gray_deep"
+                android:textSize="@dimen/mr_text_size" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_margin="7px"-->
+                <!--android:layout_weight="0.3"-->
+                <!--android:background="@drawable/editext_yb"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/areaname" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/add_accident_presentation_areaname"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_margin="7px"-->
+                <!--android:layout_weight="0.7"-->
+                <!--android:background="@drawable/editext_yb"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="@string/hintsgdq"-->
+                <!--android:textColorHint="@color/gray_deep"-->
+                <!--android:textSize="@dimen/mr_text_size" />-->
+
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.3"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:text="@string/sbr" />
+
+            <EditText
+                android:id="@+id/add_accident_presentation_sbr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7px"
+                android:layout_weight="0.7"
+                android:background="@drawable/editext_yb"
+                android:gravity="center"
+                android:hint="@string/hintsbr"
+                android:textColorHint="@color/gray_deep"
+                android:textSize="@dimen/mr_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:text="@string/AccidentDetailsTitle" />
+
+    <EditText
+        android:id="@+id/add_accident_content_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:minHeight="200px"
+        android:background="@drawable/editext_yb"
+        android:gravity="top"
+        android:hint="@string/hintsgxq"
+        android:padding="5px"
+        android:text=""
+        android:textColorHint="@color/gray_deep" />
+
+
+</LinearLayout>

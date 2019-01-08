@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="risk_management.HiddenDangerReviewDetail">
+
+    <RelativeLayout
+        style="@style/TitleHeight"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <include
+            android:id="@+id/review_detail_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="@string/risk_management_rl5_text" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/HiddenName" />
+
+                <EditText
+                    android:id="@+id/review_detail_hiddenname_etv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:enabled="false"
+                    android:hint="@string/PleaseInputHiddenName"
+                    android:paddingLeft="10px"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/PersonLiable" />
+
+                <EditText
+                    android:id="@+id/review_detail_hiddenpersonLiable_etv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:enabled="false"
+                    android:hint="@string/PleaseInputZrr"
+                    android:paddingLeft="10px"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_deep" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/HiddenDescription" />
+
+                <EditText
+                    android:id="@+id/review_detail_yhms"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:enabled="false"
+                    android:hint="@string/PleaseInputYhms"
+                    android:paddingLeft="10px"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/YsZj" />
+
+                <EditText
+                    android:id="@+id/review_detail_expert_etv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:hint="@string/PleaseInputZj"
+                    android:paddingLeft="10px"
+                    android:textColorHint="@color/gray_deep" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/YsDate" />
+
+                <TextView
+                    android:id="@+id/review_detail_ysdate_etv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:drawableRight="@drawable/mdate"
+                    android:gravity="center"
+                    android:paddingLeft="10px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/YsAddress" />
+
+                <EditText
+                    android:id="@+id/review_detail_ysaddress_etv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:hint="@string/PleaseInputYsAddress"
+                    android:paddingLeft="10px"
+                    android:textColorHint="@color/gray_deep" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="@string/YsSituation" />
+
+                <EditText
+                    android:id="@+id/review_detail_yssituation_etv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:hint="@string/PleaseInputYsSituation"
+                    android:paddingLeft="10px"
+                    android:textColorHint="@color/gray_deep" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/white"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/x20"-->
+        <!--android:background="@color/green"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="0.3"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/SelectPicture" />-->
+
+        <!--<RadioGroup-->
+        <!--android:id="@+id/commonly_radiogroup"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="0.7"-->
+        <!--android:orientation="horizontal">-->
+
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/commonly_radiobutton1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="100px"-->
+        <!--android:text="图片" />-->
+
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/commonly_radiobutton2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="现场环境限制" />-->
+
+        <!--</RadioGroup>-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<com.example.administrator.dimine_sis.MyGridView-->
+        <!--android:id="@+id/review_detail_gridview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="@dimen/x30"-->
+        <!--android:horizontalSpacing="@dimen/space_size"-->
+        <!--android:verticalSpacing="@dimen/space_size"></com.example.administrator.dimine_sis.MyGridView>-->
+        <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+    </ScrollView>
+
+    <Button
+        android:id="@+id/review_detail_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@drawable/fillin_btn"
+        android:text="@string/Submit"
+        android:textColor="@color/white" />
+</LinearLayout>

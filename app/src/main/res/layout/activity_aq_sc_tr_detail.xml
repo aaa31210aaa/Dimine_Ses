@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home_content.AqScTrDetail">
+
+
+    <RelativeLayout style="@style/TitleHeight">
+
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="安全生产投入详情" />
+
+        <include
+            android:id="@+id/aqsctr_detail_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="生产月份" />
+
+                <TextView
+                    android:id="@+id/aqsctr_detail_monthvalue"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="费用类型" />
+
+                <TextView
+                    android:id="@+id/aqsctr_detail_investypename"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="项目名称" />
+
+                <TextView
+                    android:id="@+id/aqsctr_detail_investname"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="费用金额" />
+
+                <TextView
+                    android:id="@+id/aqsctr_detail_usemoney"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="企业名称" />
+
+                <TextView
+                    android:id="@+id/aqsctr_detail_qyname"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="使用部位" />
+
+                <TextView
+                    android:id="@+id/aqsctr_detail_usesite"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="数量" />
+
+                <TextView
+                    android:id="@+id/aqsctr_detail_usecount"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="单位" />
+
+                <TextView
+                    android:id="@+id/aqsctr_detail_useuint"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="总额" />
+
+                <TextView
+                    android:id="@+id/aqsctr_detail_summoney"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+                <!--<TextView-->
+                    <!--style="@style/SgxqTitle"-->
+                    <!--android:text="附件名称" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/aqsctr_detail_filename"-->
+                    <!--style="@style/SgxqContent"-->
+                    <!--android:text="" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="备注：" />
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    android:id="@+id/aqsctr_detail_memo"
+                    style="@style/SgxqContent"
+                    android:gravity="top"
+                    android:minHeight="200px"
+                    android:paddingLeft="10px"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ListView
+        android:id="@+id/aqsctr_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"></ListView>
+
+</LinearLayout>

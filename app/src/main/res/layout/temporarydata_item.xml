@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/temporary_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20px" />
+
+            <TextView
+                android:id="@+id/temporary_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:text="" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/temporarydata_item_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:clickable="false"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home_content.BmGlDetail">
+
+    <RelativeLayout style="@style/TitleHeight">
+        <TextView
+            style="@style/MmTitleTextSize"
+            android:text="安全机构部门管理详情" />
+
+        <include
+            android:id="@+id/aqjypx_detail_back"
+            layout="@layout/back_base"></include>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="单位名称" />
+
+                <TextView
+                    android:id="@+id/bmgl_detail_parentdeptname"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="部门名称" />
+
+                <TextView
+                    android:id="@+id/bmgl_detail_deptname"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="部门编号" />
+
+                <TextView
+                    android:id="@+id/bmgl_detail_deptcode"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="联系电话" />
+
+                <TextView
+                    android:id="@+id/bmgl_detail_tel"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="传真" />
+
+                <TextView
+                    android:id="@+id/bmgl_detail_fax"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="地址" />
+
+                <TextView
+                    android:id="@+id/bmgl_detail_address"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout style="@style/SgxqLL">-->
+
+                <!--<TextView-->
+                    <!--style="@style/SgxqTitle"-->
+                    <!--android:text="附件名称" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/bmgl_detail_filename"-->
+                    <!--style="@style/SgxqContent"-->
+                    <!--android:text="" />-->
+
+            <!--</LinearLayout>-->
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="备注：" />
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    android:id="@+id/bmgl_detail_memo"
+                    style="@style/SgxqContent"
+                    android:gravity="top"
+                    android:minHeight="200px"
+                    android:paddingLeft="10px"
+                    android:text="" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/bmgl_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"></ListView>
+
+</LinearLayout>

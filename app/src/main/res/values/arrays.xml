@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_classification">
+        <item>不安全行为</item>
+        <item>不安全状态</item>
+        <item>管理缺陷</item>
+    </string-array>
+
+    <string-array name="array_type">
+        <item>立即整改</item>
+        <item>限期整改</item>
+        <item>停业停产整顿</item>
+    </string-array>
+
+    <string-array name="array_aitypename">
+        <item>化学品爆炸</item>
+        <item>山体滑坡</item>
+    </string-array>
+
+    <string-array name="array_ailevelname">
+        <item>重大事故</item>
+        <item>一般事故</item>
+    </string-array>
+
+    <string-array name="array_swnum">
+        <item>造成30人以上死亡或者100人以上重伤(包括急性工业中毒，下同)</item>
+        <item>造成10人以上30人以下死亡或者50人以上100人以下重伤</item>
+        <item>造成3人以上10人以下死亡或者10人以上50人以下重伤</item>
+        <item>造成3人以下死亡或者10人以下重伤</item>
+    </string-array>
+
+    <string-array name="array_jjss">
+        <item>1亿元以上直接经济损失的事故</item>
+        <item>5000万元以上1亿元以下直接经济损失的事故</item>
+        <item>1000万元以上5000万元以下直接经济损失的事故</item>
+        <item>1000万元以下直接经济损失的事故</item>
+    </string-array>
+
+    <string-array name="time_fw">
+        <item>可能造成全省乃至全国范围内的重大影响、整改时间达到或者超过一年、投入资金超过5000万元的</item>
+        <item>可能造成市(州)乃至全省范围的重大影响、整改时间在300天以上一年以下、投入资金在1000万元以上5000万元以下的</item>
+        <item>可能造成县(市)乃至周边地区范围内的重大影响、整改时间在180天以上300天以下、投入资金在100万元以上1000万元以下的</item>
+        <item>可能造成事发当地范围内的重大影响、且整改时间在30天以上180天以下、投入资金在10万元以上100万元以下的</item>
+    </string-array>
+
+    <string-array name="hidden_level">
+        <item>重大隐患一级</item>
+        <item>重大隐患二级</item>
+        <item>重大隐患三级</item>
+        <item>重大隐患四级</item>
+    </string-array>
+
+    <string-array name="risk_street">
+        <item>全部</item>
+        <item>高塘岭街道</item>
+        <item>铜官街道</item>
+        <item>乌山街道</item>
+        <item>白沙洲街道</item>
+        <item>月亮岛街道</item>
+        <item>大泽湖街道</item>
+        <item>丁字湾街道</item>
+        <item>黄金园街道</item>
+        <item>金山桥街道</item>
+        <item>茶亭镇</item>
+        <item>靖港镇</item>
+        <item>桥驿镇</item>
+        <item>白箬铺镇</item>
+        <item>乔口镇</item>
+        <item>铜官园区</item>
+        <item>经开区</item>
+    </string-array>
+
+    <string-array name="risk_level">
+        <item>全部</item>
+        <item>重大</item>
+        <item>严重</item>
+        <item>一般</item>
+        <item>轻微</item>
+    </string-array>
+
+    <string-array name="risk_industry">
+        <item>全部</item>
+        <item>危化</item>
+        <item>工贸</item>
+        <item>非煤矿山</item>
+        <item>烟花爆竹</item>
+    </string-array>
+
+
+</resources>
